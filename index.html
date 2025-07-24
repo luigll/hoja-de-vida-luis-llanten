@@ -1,11 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hoja de vida de luis llanten</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoja de vida - Luis Llanten</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      text-align: center;
+      text-transform: capitalize;
+    }
+    h2 {
+      color: #1a73e8;
+      margin-top: 30px;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .contacto ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .contacto li {
+      margin: 5px 0;
+    }
+    nav {
+      border-top: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
+      padding: 10px 0;
+      margin: 20px 0;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1a73e8;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
+
 <body>
-    
+  <header>
+    <img src="foto.jpg" alt="Foto de perfil" />
+    <h1>Luis Elver Llanten Vidal</h1>
+    <div class="contacto">
+      <ul>
+        <li>📞 Teléfono: 3136028456</li>
+        <li>✉️ Correo: luigllanten@email.com</li>
+      </ul>
+    </div>
+  </header>
+
+  <nav>
+    <h2>Índice</h2>
+    <ul>
+      <li><a href="#Acerca">Acerca de mí</a></li>
+      <li><a href="#Estudios">Estudios</a></li>
+      <li><a href="#Idiomas">Idiomas</a></li>
+      <li><a href="#Proyectos">Proyectos</a></li>
+      <li><a href="#Referencias">Referencias</a></li>
+    </ul>
+  </nav>
+
+  <section id="Acerca">
+    <h2>Acerca de mí</h2>
+    <p>Oficial de estructuras livianas con más de 5 años de experiencia, apasionado por la tecnología y el aprendizaje continuo. Actualmente me estoy formando en seguridad informática y hacking ético, con el objetivo de desarrollarme como pentester.</p>
+
+    <h2>Objetivo profesional</h2>
+    <p>Obtener una oportunidad laboral en el área de ciberseguridad o soporte técnico donde pueda aplicar mis conocimientos en hacking ético y seguir creciendo profesionalmente.</p>
+
+    <h2>Experiencia laboral</h2>
+    <p>Oficial de estructuras livianas – Más de 5 años de experiencia en construcción, instalación y mantenimiento.</p>
+  </section>
+
+  <section id="Estudios">
+    <h2>Estudios</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Institución</th>
+          <th>Año</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bachiller</td>
+          <td>Colegio Ateneo Autónomo de Florencia</td>
+          <td>2015</td>
+        </tr>
+        <tr>
+          <td>Bootcamp en Ciberseguridad</td>
+          <td>Talento Tec</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>Programación (En curso)</td>
+          <td>Universidad Libre – Cali</td>
+          <td>2025</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="Idiomas">
+    <h2>Idiomas</h2>
+    <ul>
+      <li>Español: Nativo</li>
+      <li>Inglés: Básico (en formación)</li>
+    </ul>
+  </section>
+
+  <section id="Proyectos">
+    <h2 style="color: #007bff;">Proyectos Personales</h2>
+    <ul>
+      <li>
+        <strong>Programación:</strong> En curso – 
+        <a href="https://www.unilibre.edu.co/cali/" target="_blank">Universidad Libre Cali</a><br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Escudo_de_la_Universidad_Libre_de_Colombia.svg" alt="Universidad Libre de Cali" style="width: 120px; margin-top: 10px;">
+      </li>
+      <li><strong>Laboratorio de Pentesting:</strong> Simulación de ataques y análisis de vulnerabilidades en VirtualBox.</li>
+      <li><strong>Captura de tráfico en redes:</strong> Análisis de paquetes con Wireshark.</li>
+    </ul>
+  </section>
+
+  <section id="Referencias">
+    <h2>Referencias</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Relación</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Carlos López</td>
+          <td>Jefe anterior</td>
+          <td>320 456 7890</td>
+        </tr>
+        <tr>
+          <td>María Fernanda Díaz</td>
+          <td>Compañera de trabajo</td>
+          <td>311 234 5678</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 </body>
 </html>
