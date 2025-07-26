@@ -19,26 +19,24 @@
       </ul>
     </div>
   </header>
-
   <nav>
-    <h2>Índice</h2>
     <ul>
       <li><a href="#Acerca">Acerca de mí</a></li>
       <li><a href="#Estudios">Estudios</a></li>
       <li><a href="#Idiomas">Idiomas</a></li>
       <li><a href="#Proyectos">Proyectos</a></li>
       <li><a href="#Referencias">Referencias</a></li>
+      <li><a href="#contacto">Contáctame</a></li>
     </ul>
   </nav>
-  <hr>
-
+   <hr>
   <div class="seccion" id="Acerca">
     <h2>Acerca de mí</h2>
     <p>Oficial de estructuras livianas con más de 5 años de experiencia, apasionado por la tecnología y el aprendizaje continuo. Actualmente me estoy formando en seguridad informática y hacking ético, con el objetivo de desarrollarme como pentester.</p>
-
+    <hr>
     <h2>Objetivo profesional</h2>
     <p>Obtener una oportunidad laboral en el área de ciberseguridad o soporte técnico donde pueda aplicar mis conocimientos en hacking ético y seguir creciendo profesionalmente.</p>
-
+    <hr>
     <h2>Experiencia laboral</h2>
     <p>Oficial de estructuras livianas – Más de 5 años de experiencia en construcción, instalación y mantenimiento.</p>
   </div>
@@ -118,6 +116,23 @@
       </tbody>
     </table>
   </div>
+    <section id="contacto">
+  <h2>Contáctame</h2>
+  <form>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+    <!-- Si quieres el botón de enviar, descomenta esta línea -->
+    <!-- <button type="submit">Enviar</button> -->
+  </form>
+</section>
+
   <footer style="text-align: center; padding: 20px; background-color: #f2f2f2; margin-top: 40px;">
   <p>&copy; 2025 Luis Llanten V. Todos los derechos reservados.</p>
 </footer>
