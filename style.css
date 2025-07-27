@@ -69,8 +69,18 @@ nav a:hover {
   padding: 0 15px;
 }
 
+.seccion h2 {
+  text-transform: uppercase;
+  color: #004085;
+  letter-spacing: 1px;
+}
+
+.seccion p {
+  font-style: italic;
+  line-height: 1.6;
+}
+
 h2 {
-  color: #007bff;
   margin-top: 30px;
 }
 
@@ -102,38 +112,44 @@ footer {
   background-color: #f2f2f2;
   margin-top: 40px;
 }
+
 hr {
   border: none;
   border-top: 2px solid #99ccff;
   margin: 40px 0;
 }
+
 form {
   background-color: white;
   padding: 20px;
   border-radius: 12%;
-  box-shadow: 0 2px 8px rgba(o, 123, 255, alpha);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
   max-width: 600px;
   margin: 30px auto;
 }
+
 form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
-form input ;
-textarea {
-  width: 100;
+
+form input,
+form textarea {
+  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
 }
+
 form input:focus,
 form textarea:focus {
   border-bottom: 2px solid #007bff;
   outline: none;
 }
+
 form button {
   background-color: #007bff;
   color: white;
@@ -147,7 +163,7 @@ form button {
 form button:hover {
   background-color: #0056b3;
 }
-/* DISEÑO PARA CELULARES */
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -165,4 +181,28 @@ form button:hover {
   form {
     padding: 15px;
   }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+#Acerca h2,
+#Contacto h2 {
+  text-transform: uppercase;
+  color: #004085;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
