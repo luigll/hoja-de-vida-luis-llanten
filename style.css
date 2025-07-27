@@ -107,3 +107,62 @@ hr {
   border-top: 2px solid #99ccff;
   margin: 40px 0;
 }
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12%;
+  box-shadow: 0 2px 8px rgba(o, 123, 255, alpha);
+  max-width: 600px;
+  margin: 30px auto;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+form input ;
+textarea {
+  width: 100;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+form input:focus,
+form textarea:focus {
+  border-bottom: 2px solid #007bff;
+  outline: none;
+}
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .foto-perfil {
+    width: 100px;
+    height: 100px;
+  }
+
+  .seccion {
+    padding: 0 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
