@@ -2,140 +2,170 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hoja de vida - Luis Llanten</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoja de vida - Luis Elver Llanten Vidal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header>
-    <img src="foto.jpg" alt="Foto de perfil" class="foto-perfil" />
+  <div class="contenedor">
+    
+    <header>
+    <!-- Botón menú hamburguesa (visible en móvil) -->
+    <button id="btnMenu">☰</button>
 
-    <h1>Luis Elver Llanten Vidal</h1>
-    <div class="contacto">
-      <ul>
-        <li>📞 Teléfono: 3136028456</li>
-        <li>✉️ Correo: luigllanten@email.com</li>
-      </ul>
+    <div>
+        <h1>Luis Elver Llanten Vidal</h1>
+        <ul style="list-style:none; padding-left: 0;">
+            <li>📞 Teléfono: 3136028456</li>
+            <li>✉️ Correo: luigllanten@gmail.com</li>
+        </ul>
     </div>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#Acerca">Acerca de mí</a></li>
-      <li><a href="#Estudios">Estudios</a></li>
-      <li><a href="#Idiomas">Idiomas</a></li>
-      <li><a href="#Proyectos">Proyectos</a></li>
-      <li><a href="#Referencias">Referencias</a></li>
-      <li><a href="#contacto">Contáctame</a></li>
-    </ul>
-  </nav>
-   <hr>
-  <div class="seccion" id="Acerca">
-    <h2>Acerca de mí</h2>
-    <p>Oficial de estructuras livianas con más de 5 años de experiencia, apasionado por la tecnología y el aprendizaje continuo. Actualmente me estoy formando en seguridad informática y hacking ético, con el objetivo de desarrollarme como pentester.</p>
-    <hr>
-    <h2>Objetivo profesional</h2>
-    <p>Obtener una oportunidad laboral en el área de ciberseguridad o soporte técnico donde pueda aplicar mis conocimientos en hacking ético y seguir creciendo profesionalmente.</p>
-    <hr>
-    <h2>Experiencia laboral</h2>
-    <p>Oficial de estructuras livianas – Más de 5 años de experiencia en construcción, instalación y mantenimiento.</p>
-  </div>
-  <hr>
-  <div class="seccion" id="Estudios">
-    <h2>Estudios</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Título</th>
-          <th>Institución</th>
-          <th>Año</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Bachiller</td>
-          <td>Colegio Ateneo Autónomo de Florencia</td>
-          <td>2015</td>
-        </tr>
-        <tr>
-          <td>Bootcamp en Ciberseguridad</td>
-          <td>Talento Tec</td>
-          <td>2024</td>
-        </tr>
-        <tr>
-          <td>Programación (En curso)</td>
-          <td>Universidad Libre – Cali</td>
-          <td>2025</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <hr>
-  <div class="seccion" id="Idiomas">
-    <h2>Idiomas</h2>
-    <ul>
-      <li>Español: Nativo</li>
-      <li>Inglés: Básico (en formación)</li>
-    </ul>
-  </div>
-  <hr>
-  <div class="seccion" id="Proyectos">
-    <h2>Proyectos Personales</h2>
-    <ul>
-      <li>
-        <strong>Programación:</strong> En curso – 
-        <a href="https://www.unilibre.edu.co/cali/" target="_blank">Universidad Libre Cali</a><br>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Escudo_de_la_Universidad_Libre_de_Colombia.svg" alt="Universidad Libre de Cali" style="width: 120px; margin-top: 10px;">
-      </li>
-      <li><strong>Laboratorio de Pentesting:</strong> Simulación de ataques y análisis de vulnerabilidades en VirtualBox.</li>
-      <li><strong>Captura de tráfico en redes:</strong> Análisis de paquetes con Wireshark.</li>
-    </ul>
-  </div>
-  <hr>
-  <div class="seccion" id="Referencias">
-    <h2>Referencias</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Relación</th>
-          <th>Teléfono</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Carlos López</td>
-          <td>Jefe anterior</td>
-          <td>320 456 7890</td>
-        </tr>
-        <tr>
-          <td>María Fernanda Díaz</td>
-          <td>Compañera de trabajo</td>
-          <td>311 234 5678</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-    <div class="seccion" id="contacto">
-    <h2>Contáctame</h2>
-    <form>
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+    <div>
+        <img src="foto.jpg" alt="Foto de perfil" />
+    </div>
+</header>
 
-    <label for="correo">Correo electrónico:</label><br>
-    <input type="email" id="correo" name="correo" required><br><br>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-
-    <!-- Si quieres el botón de enviar, descomenta esta línea -->
-    <!-- <button type="submit">Enviar</button> -->
-  </form>
+<div id="sidebar" style="display: none;">
+    <button id="closeMenu">✖</button>
+    <a href="#acerca">Acerca de mí</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#idiomas">Idiomas</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#referencias">Referencias</a>
+    <a href="#contacto">Contáctame</a>
 </div>
 
-  <footer style="text-align: center; padding: 20px; background-color: #f2f2f2; margin-top: 40px;">
-  <p>&copy; 2025 Luis Llanten V. Todos los derechos reservados.</p>
-</footer>
+
+<nav>
+    <a href="#acerca">Acerca de mí</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#idiomas">Idiomas</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#referencias">Referencias</a>
+    <a href="#contacto">Contáctame</a>
+</nav>
+
+  
+      
+
+    <section id="acerca">
+      <h2>Acerca de mí</h2>
+      <p></p>Oficial de estructuras livianas con más de 5 años de experiencia, apasionado por la tecnología y el aprendizaje continuo. Actualmente me estoy formando en seguridad informática y hacking ético, con el objetivo de desarrollarme como pentester.
+      <hr>
+      <h2>Objetivo profesional</h2>
+      <p>Obtener una oportunidad laboral en el área de ciberseguridad o soporte técnico donde pueda aplicar mis conocimientos en hacking ético y seguir creciendo profesionalmente.</p>
+      <hr>
+      <h2>Experiencia laboral</h2>
+      <p>
+Oficial de estructuras livianas – Más de 5 años de experiencia en construcción, instalación y mantenimiento</p>
+    </section>
+
+    <section id="estudios">
+      <h2>Estudios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Institución</th>
+            <th>Año</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Bachiller</td><td>Colegio Ateneo Autónomo de Florencia</td><td>2015</td></tr>
+          <tr><td>Bootcamp en Ciberseguridad</td><td>Talento Tec</td><td>2024</td></tr>
+          <tr><td>Programación (En curso)</td><td>Universidad Libre – Cali</td><td>2025</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="miexperienciadestacada">
+      <h2>Mi experiencia destacada</h2>
+      <article>
+        <h3>Proyecto Web Personal</h3>
+        <p>Desarrollé una página web profesional desde cero usando <span style="font-weight:bold;">HTML, CSS y JavaScript</span>, aplicando buenas prácticas de diseño responsive y accesibilidad.</p>
+        <button onclick="mostrarMensaje('Mi experiencia destacada')">Mostrar mensaje</button>
+      </article>
+    </section>
+
+    <section id="idiomas">
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español: Nativo</li>
+        <li>Inglés: Básico (en formación)</li>
+      </ul>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos Personales</h2>
+      <ul>
+        <li><strong>Programación:</strong> En curso – <a href="https://www.unilibre.edu.co/cali/" target="_blank" rel="noopener noreferrer">Universidad Libre Cali</a></li>
+        <li><strong>Laboratorio de Pentesting:</strong> Simulación de ataques...</li>
+        <li><strong>Captura de tráfico en redes:</strong> Análisis de paquetes con Wireshark.</li>
+      </ul>
+    </section>
+
+    <section id="referencias">
+      <h2>Referencias</h2>
+      <table>
+        <thead>
+          <tr><th>Nombre</th><th>Relación</th><th>Teléfono</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Carlos López</td><td>Jefe anterior</td><td>320 456 7890</td></tr>
+          <tr><td>María Fernanda Díaz</td><td>Compañera de trabajo</td><td>311 234 5678</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctame</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <h2>Subir una imagen</h2>
+      <form id="formImagen" enctype="multipart/form-data">
+        <label for="imagen">Selecciona una imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+        <img id="preview" style="max-width: 300px; display: none;">
+        <button type="submit">Subir Imagen</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Luis Llanten V. Todos los derechos reservados.</p>
+    <div class="card seccion">
+      <h2>Sígueme en redes</h2>
+      <a href="https://github.com/luigll" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.threads.com/@luig_llanten" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const btnMenu = document.getElementById('btnMenu');
+    const sidebar = document.getElementById('sidebar');
+    const closeMenu = document.getElementById('closeMenu');
+
+    btnMenu.addEventListener('click', () => {
+        sidebar.style.display = 'block';
+    });
+
+    closeMenu.addEventListener('click', () => {
+        sidebar.style.display = 'none';
+    });
+</script>
 
 </body>
 </html>
