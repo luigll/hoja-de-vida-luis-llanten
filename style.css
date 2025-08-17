@@ -1,6 +1,10 @@
+:root {
+    --header-height: 100px;
+}
+
 /* Encabezado fijo */
 header {
-    background-color: #0a3d62; /* Azul oscuro elegante */
+    background-color: #0a3d62;
     color: white;
     padding: 20px;
     display: flex;
@@ -10,7 +14,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    --header-height: 100px; /* altura del header */
 }
 
 /* Encabezado - texto */
@@ -23,11 +26,11 @@ header .contacto {
     font-size: 0.9em;
 }
 
-/* Foto perfil en header */
+/* Foto perfil */
 header img {
     width: 100px;
     height: 100px;
-    border-radius: 8px; /* esquinas redondeadas */
+    border-radius: 8px;
     border: 3px solid white;
 }
 
@@ -38,11 +41,11 @@ header img {
 
 /* Barra de navegación fija */
 nav {
-    background-color: #f8f9fa; /* Gris claro */
+    background-color: #f8f9fa;
     padding: 8px;
     text-align: center;
     position: sticky;
-    top: var(--header-height, 100px); /* usa la altura del header */
+    top: var(--header-height);
     z-index: 999;
     border-bottom: 1px solid #ddd;
 }
@@ -61,7 +64,7 @@ nav a:hover {
 /* Contenido */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Fondo general suave */
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
 }
@@ -167,11 +170,11 @@ footer a:hover {
 /* RESPONSIVE */
 /* ------------------------ */
 @media (max-width: 768px) {
-    /* Ajustar el encabezado */
     header {
         flex-direction: column;
         align-items: flex-start;
         padding: 15px;
+        border-radius: 0;
     }
 
     header img {
@@ -184,7 +187,6 @@ footer a:hover {
         font-size: 0.8em;
     }
 
-    /* Menú hamburguesa en móvil */
     #btnMenu {
         display: block;
         background: none;
@@ -195,16 +197,13 @@ footer a:hover {
         margin-bottom: 10px;
     }
 
-    /* Ocultar el nav principal en móvil */
     nav {
         display: none;
-        position: static; /* Evita que tape contenido */
+        position: static;
         border: none;
     }
 
-    /* Menú lateral que aparece al presionar el botón */
     #sidebar {
-        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -213,6 +212,12 @@ footer a:hover {
         background-color: #0a3d62;
         padding: 20px;
         z-index: 2000;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    #sidebar.open {
+        transform: translateX(0);
     }
 
     #sidebar a {
@@ -229,9 +234,4 @@ footer a:hover {
         color: white;
         cursor: pointer;
     }
-}
-
-/* Mostrar el menú lateral cuando tenga la clase .open */
-#sidebar.open {
-    display: block;
 }
